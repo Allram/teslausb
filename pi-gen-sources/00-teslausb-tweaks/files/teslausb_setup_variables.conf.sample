@@ -49,7 +49,8 @@ export SHARE_PASSWORD=password
 #        The car will delete clips from the RecentClips that are older than an hour.
 #    * MUSIC_SIZE can be an explicit or relative size but should be large enough to hold your music
 #      library (obviously).
-export CAM_SIZE=16G
+# Tesla Firmware 2020.48.10 and newer gives you a warning if you have a CAM_SIZE of under 32GB.
+export CAM_SIZE=32G
 #export MUSIC_SIZE=4G
 
 # If you want to automatically copy music from a CIFS share every time
